@@ -1,0 +1,4 @@
+id: file:///C:/Users/VISAL/Documents/Functional%20programing/T6/CaeserChiper.scala:[7..7) in Input.VirtualFile("file:///C:/Users/VISAL/Documents/Functional%20programing/T6/CaeserChiper.scala", "object ")
+file:///C:/Users/VISAL/Documents/Functional%20programing/T6/CaeserChiper.scala:1: error: expected identifier; obtained eof
+object 
+       ^
