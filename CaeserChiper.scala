@@ -4,7 +4,7 @@ object Tesst extends App{
     val alphabets: List[Char] = ('A' to 'Z').toList
     // println("Enter shift number")
     // //println(alphabets.indexOf('C'))
-    // var shift= scala.io.StdIn.readInt()
+    var shift= scala.io.StdIn.readInt()
     println("Enter text")
     var text:Array[Char]= scala.io.StdIn.readLine().toArray
     var encript:Array[Char]= Array.fill(text.length)(' ')
@@ -23,11 +23,12 @@ object Tesst extends App{
             }
             encription(text,shift,count+1)
         }
-        else 
-            println(encript)
+        else
+            println(encript.mkString("")) 
+            
     }
-    //encription(text,shift,count = 0)
-    encript=text
-    println(text)
+    encription(text,shift,count = 0)
+    
+    
 
 }
