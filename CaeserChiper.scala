@@ -1,9 +1,7 @@
-import scala.compiletime.ops.int
 import scala.io.StdIn
 object Tesst extends App{
     val alphabets: List[Char] = ('A' to 'Z').toList
     print("Enter shift number : ")
-    // //println(alphabets.indexOf('C'))
     var shift= scala.io.StdIn.readInt()
     print("Enter text : ")
     var text:Array[Char]= scala.io.StdIn.readLine().toArray
@@ -16,8 +14,7 @@ object Tesst extends App{
                 encript(count)=' '
             }
             else{
-                val encryptedChar: Char = alphabets((alphabets.indexOf(text(count)) + shift) % 26)
-                encript(count) = encryptedChar
+                encript(count) = alphabets((alphabets.indexOf(text(count)) + shift) % 26)    
             }
             encription(text,shift,count+1)
         }
@@ -33,8 +30,7 @@ object Tesst extends App{
                 encript(count)=' '
             }
             else{
-                val decryptedChar: Char = alphabets((alphabets.indexOf(text(count)) - shift) % 26)
-                decript(count) = decryptedChar
+                decript(count)  = alphabets((alphabets.indexOf(text(count)) - shift) % 26)
             }
             decription(text,shift,count+1)
         }
